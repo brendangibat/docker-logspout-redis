@@ -1,5 +1,8 @@
 Docker image based on [gliderlabs/logspout](https://registry.hub.docker.com/u/gliderlabs/logspout/) with added redis adapter (github.com/brendangibat/logspout-redis-logstash).
 
+#### This container is specific to AWS
+
+This container uses github.com/brendangibat/logspout-redis-logstash which pulls extra metadata from the AWS metadata service.
 
 ## Logspout Options to Process Container Messages
 To make logspout ignore a containers logs, set the environmental variable and value of 'LOGSPOUT=ignore' on the container being ignored for it to be ignored.
